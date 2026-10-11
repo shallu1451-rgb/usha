@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Usha Tour and Travels | Kerala Holiday & Tour Packages 2026</title>
+  <meta name="description" content="Book best Kerala Tour Packages with Usha Tour and Travels. Custom Munnar hills, Alleppey backwater houseboats, wildlife in Thekkady, and Kovalam beaches.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Contact Bar -->
+  <div class="topbar">
+    <div class="container topbar-content">
+      <div class="topbar-contact">
+        <a href="tel:+919847012345"><i class="fa-solid fa-phone"></i> +91 98470 12345 / 98470 54321</a>
+        <a href="mailto:info@ushatravels.com"><i class="fa-solid fa-envelope"></i> info@ushatravels.com</a>
+        <span><i class="fa-solid fa-location-dot"></i> Cochin, Kerala, India</span>
+      </div>
+      <div>
+        <span class="topbar-badge"><i class="fa-solid fa-award"></i> Kerala Tourism Approved Partner</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">
+          <i class="fa-solid fa-umbrella-beach"></i>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">USHA <span>TOUR & TRAVELS</span></span>
+          <span class="brand-tagline">Kerala Tailor-Made Holidays</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="#packages-section">Tour Packages</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#why-us">Why Choose Us</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <button class="btn btn-gold" onclick="openQuoteModal('Kerala Customized Tour')">
+          <i class="fa-solid fa-paper-plane"></i> Plan My Trip
+        </button>
+        <button class="mobile-toggle" aria-label="Toggle menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-pattern"></div>
+    <div class="container hero-content">
+      <span class="hero-tag"><i class="fa-solid fa-leaf"></i> Experience God's Own Country</span>
+      <h1 class="hero-title">Discover Handcrafted <span>Kerala Tour Packages</span></h1>
+      <p class="hero-subtitle">Misty Munnar tea hills, emerald Alleppey backwaters in private houseboats, spice-scented Thekkady forests, and golden beaches of Kovalam. Personalized by local Kerala experts.</p>
+
+      <!-- Quick Filter / Search Bar -->
+      <div class="search-filter-card">
+        <div class="filter-form-grid">
+          <div class="filter-group">
+            <label><i class="fa-solid fa-map-location-dot"></i> Destination</label>
+            <select class="filter-select" id="heroDestSelect">
+              <option value="all">All Destinations</option>
+              <option value="munnar">Munnar</option>
+              <option value="alleppey">Alleppey (Houseboat)</option>
+              <option value="thekkady">Thekkady</option>
+              <option value="athirapilly">Athirapilly Waterfalls</option>
+              <option value="kovalam">Kovalam / Kanyakumari</option>
+              <option value="wayanad">Wayanad</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label><i class="fa-solid fa-calendar-days"></i> Duration</label>
+            <select class="filter-select" id="heroDurationSelect">
+              <option value="all">Any Duration</option>
+              <option value="3">3 Days (Weekend / Short)</option>
+              <option value="4">4 Days (Classic Munnar & Alleppey)</option>
+              <option value="5">5 Days (Munnar, Thekkady, Houseboat)</option>
+              <option value="6">6 Days (Complete Central Kerala)</option>
+              <option value="7">7 Days (Grand Kerala Explorer)</option>
+              <option value="8">8-9 Days (Extended Kerala & Kanyakumari)</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label><i class="fa-solid fa-tags"></i> Package Theme</label>
+            <select class="filter-select">
+              <option value="all">All Styles</option>
+              <option value="family">Family Holiday</option>
+              <option value="honeymoon">Honeymoon & Couples</option>
+              <option value="luxury">Luxury & Premium Resorts</option>
+              <option value="budget">Budget Friendly</option>
+            </select>
+          </div>
+
+          <button class="btn btn-primary" style="height: 48px;" onclick="document.getElementById('packages-section').scrollIntoView({behavior:'smooth'})">
+            <i class="fa-solid fa-magnifying-glass"></i> Explore Tours
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Indicators Bar -->
+  <section class="trust-bar">
+    <div class="container trust-grid">
+      <div class="trust-item">
+        <div class="trust-icon"><i class="fa-solid fa-hotel"></i></div>
+        <div>
+          <div class="trust-title">Handpicked Resorts</div>
+          <div class="trust-desc">Verified 3-star, 4-star & luxury stays</div>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon"><i class="fa-solid fa-ship"></i></div>
+        <div>
+          <div class="trust-title">Private Houseboats</div>
+          <div class="trust-desc">Exclusive A/C backwater cruisers</div>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon"><i class="fa-solid fa-car"></i></div>
+        <div>
+          <div class="trust-title">Private Chauffeurs</div>
+          <div class="trust-desc">Clean AC cabs with courteous local drivers</div>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon"><i class="fa-solid fa-headset"></i></div>
+        <div>
+          <div class="trust-title">24x7 Trip Concierge</div>
+          <div class="trust-desc">Local support throughout your trip</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Tour Packages Listing with Sidebar Filter -->
+  <section class="section" id="packages-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Featured Itineraries</span>
+        <h2 class="section-title">Best Selling Kerala Tour Packages</h2>
+        <p class="section-desc">Every tour package includes private AC cab transfers, comfortable stays, daily breakfast, and sightseeing.</p>
+      </div>
+
+      <div class="layout-container">
+        <!-- Filter Sidebar -->
+        <aside class="filter-sidebar">
+          <div class="filter-sidebar-head">
+            <h3><i class="fa-solid fa-sliders"></i> Filter Packages</h3>
+            <button class="reset-btn" onclick="resetFilters()">Reset All</button>
+          </div>
+
+          <!-- Price Filter -->
+          <div class="filter-block">
+            <div class="filter-block-title">Max Budget</div>
+            <div class="price-slider-wrap">
+              <input type="range" class="price-slider" id="priceRange" min="8000" max="45000" step="1000" value="45000">
+              <div class="price-values">
+                <span>Min: ₹8,000</span>
+                <span>Max: <strong id="priceDisplay">₹ 45,000</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Duration Filter -->
+          <div class="filter-block">
+            <div class="filter-block-title">Duration</div>
+            <div class="filter-options-list">
+              <label class="filter-checkbox-label">
+                <input type="checkbox" name="filter-days" value="3"> 3 Days / 2 Nights
+              </label>
+              <label class="filter-checkbox-label">
+                <input type="checkbox" name="filter-days" value="4"> 4 Days / 3 Nights
+              </label>
+              <label class="filter-checkbox-label">
+                <input type="checkbox" name="filter-days" value="5"> 5 Days / 4 Nights
+              </label>
+              <label class="filter-checkbox-label">
+                <input type="checkbox" name="filter-days" value="6"> 6 Days / 5 Nights
+              </label>
+              <label class="filter-checkbox-label">
+                <input type="checkbox" name="filter-days" value="7"> 7 Days / 6 Nights
+              </label>
+              <label class="filter-checkbox-label">
+                <input type="checkbox" name="filter-days" value="8"> 8 Days / 7 Nights
+              </label>
+              <label class="filter-checkbox-label">
+                <input type="checkbox" name="filter-days" value="9"> 9 Days / 8 Nights
+              </label>
+            </div>
+          </div>
+
+          <!-- Destinations Filter -->
+          <div class="filter-block">
+            <div class="filter-block-title">Destinations</div>
+            <div class="filter-options-list">
+              <label class="filter-checkbox-label">
+                <input type="checkbox" name="filter-dest" value="Munnar"> Munnar
+              </label>
+              <label class="filter-checkbox-label">
+                <input type="checkbox" name="filter-dest" value="Alleppey"> Alleppey Houseboat
+              </label>
+              <label class="filter-checkbox-label">
+                <input type="checkbox" name="filter-dest" value="Thekkady"> Thekkady
+              </label>
+              <label class="filter-checkbox-label">
+                <input type="checkbox" name="filter-dest" value="Athirapilly"> Athirapilly
+              </label>
+              <label class="filter-checkbox-label">
+                <input type="checkbox" name="filter-dest" value="Kovalam"> Kovalam
+              </label>
+              <label class="filter-checkbox-label">
+                <input type="checkbox" name="filter-dest" value="Kanyakumari"> Kanyakumari
+              </label>
+              <label class="filter-checkbox-label">
+                <input type="checkbox" name="filter-dest" value="Guruvayoor"> Guruvayoor
+              </label>
+              <label class="filter-checkbox-label">
+                <input type="checkbox" name="filter-dest" value="Vagamon"> Vagamon
+              </label>
+            </div>
+          </div>
+
+          <!-- Need Assistance Box -->
+          <div class="filter-block" style="background: var(--primary-subtle);">
+            <div style="font-weight: 800; font-size: 0.9rem; color: var(--primary-dark); margin-bottom: 6px;">Need Custom Trip?</div>
+            <p style="font-size: 0.8rem; color: var(--muted); margin-bottom: 12px;">Talk with our trip designer for free custom quotes.</p>
+            <a href="tel:+919847012345" class="btn btn-primary" style="width: 100%; font-size: 0.82rem; padding: 8px 12px;">
+              <i class="fa-solid fa-phone"></i> Call Destination Expert
+            </a>
+          </div>
+        </aside>
+
+        <!-- Package Grid List -->
+        <div class="packages-main-content">
+          <div class="packages-topbar">
+            <div class="packages-count">
+              Showing <strong id="visiblePkgCount">12</strong> Premium Kerala Holiday Packages
+            </div>
+            <div class="packages-sort">
+              <label>Special Offer:</label>
+              <span style="color: var(--gold); font-weight: 700;"><i class="fa-solid fa-tag"></i> Flat 15% Early Bird Discount</span>
+            </div>
+          </div>
+
+          <div class="package-grid">
+
+            <!-- Card 1: 3D/2N Munnar Cochin -->
+            <div class="pkg-card" data-days="3" data-destinations="Munnar Cochin" data-price="9499">
+              <div class="pkg-thumb">
+                <img src="https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&w=700&q=80" alt="Munnar Tea Gardens">
+                <span class="pkg-badge">Trending Short Break</span>
+                <span class="pkg-duration-pill"><i class="fa-regular fa-clock"></i> 3 Days / 2 Nights</span>
+              </div>
+              <div class="pkg-body">
+                <h3 class="pkg-title"><a href="packages/3days-2nights-cochin-munnar-tour.html">3 Days 2 Nights Cochin Munnar Tour</a></h3>
+                <div class="pkg-destinations">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span>Cochin &bull; Munnar &bull; Cheeyappara &bull; Mattupetty</span>
+                </div>
+                <div class="pkg-inclusions">
+                  <div class="inclusion-item"><i class="fa-solid fa-hotel"></i><span>Hotel</span></div>
+                  <div class="inclusion-item"><i class="fa-solid fa-utensils"></i><span>Meals</span></div>
+                  <div class="inclusion-item"><i class="fa-solid fa-car"></i><span>AC Cab</span></div>
+                  <div class="inclusion-item"><i class="fa-solid fa-camera"></i><span>Tours</span></div>
+                </div>
+                <div class="pkg-footer">
+                  <div class="pkg-price-wrap">
+                    <span class="price-prefix">Starting From</span>
+                    <span class="price-val">₹ 9,499</span>
+                  </div>
+                  <div class="pkg-actions">
+                    <a href="packages/3days-2nights-cochin-munnar-tour.html" class="btn btn-outline" style="padding: 8px 14px;">Details</a>
+                    <button class="btn btn-primary" style="padding: 8px 14px;" onclick="openQuoteModal('3 Days 2 Nights Cochin Munnar Tour')">Quote</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: 3D/2N Munnar Alleppey -->
+            <div class="pkg-card" data-days="3" data-destinations="Munnar Alleppey Houseboat" data-price="10999">
+              <div class="pkg-thumb">
+                <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=700&q=80" alt="Alleppey Houseboat Backwaters">
+                <span class="pkg-badge">Best Seller</span>
+                <span class="pkg-duration-pill"><i class="fa-regular fa-clock"></i> 3 Days / 2 Nights</span>
+              </div>
+              <div class="pkg-body">
+                <h3 class="pkg-title"><a href="packages/3days-2nights-munnar-alleppey-tour.html">3 Days 2 Nights Munnar & Alleppey Houseboat</a></h3>
+                <div class="pkg-destinations">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span>Munnar Tea Hills &bull; Alleppey Backwaters</span>
+                </div>
+                <div class="pkg-inclusions">
+                  <div class="inclusion-item"><i class="fa-solid fa-ship"></i><span>Houseboat</span></div>
+                  <div class="inclusion-item"><i class="fa-solid fa-utensils"></i><span>All Meals</span></div>
+                  <div class="inclusion-item"><i class="fa-solid fa-car"></i><span>Private Cab</span></div>
+                  <div class="inclusion-item"><i class="fa-solid fa-mountain"></i><span>Sightseeing</span></div>
+                </div>
+                <div class="pkg-footer">
+                  <div class="pkg-price-wrap">
+                    <span class="price-prefix">Starting From</span>
+                    <span class="price-val">₹ 10,999</span>
+                  </div>
+                  <div class="pkg-actions">
+                    <a href="packages/3days-2nights-munnar-alleppey-tour.html" class="btn btn-outline" style="padding: 8px 14px;">Details</a>
+                    <button class="btn btn-primary" style="padding: 8px 14px;" onclick="openQuoteModal('3 Days 2 Nights Munnar & Alleppey Houseboat')">Quote</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3: 3D/2N Athirapilly Munnar -->
+            <div class="pkg-card" data-days="3" data-destinations="Athirapilly Munnar" data-price="9999">
+              <div class="pkg-thumb">
+                <img src="https://images.unsplash.com/photo-1627915525547-4f676b77ea6b?auto=format&fit=crop&w=700&q=80" alt="Athirapilly Waterfalls">
+                <span class="pkg-badge">Nature Escape</span>
+                <span class="pkg-duration-pill"><i class="fa-regular fa-clock"></i> 3 Days / 2 Nights</span>
+              </div>
+              <div class="pkg-body">
+                <h3 class="pkg-title"><a href="packages/3days-2nights-athirapilly-munnar-tour.html">3 Days 2 Nights Athirapilly Waterfalls & Munnar</a></h3>
+                <div class="pkg-destinations">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span>Athirapilly Falls &bull; Vazhachal &bull; Munnar</span>
+                </div>
+                <div class="pkg-inclusions">
+                  <div class="inclusion-item"><i class="fa-solid fa-hotel"></i><span>Resort</span></div>
+                  <div class="inclusion-item"><i class="fa-solid fa-utensils"></i><span>Breakfast</span></div>
+                  <div class="inclusion-item"><i class="fa-solid fa-car"></i><span>Transfer</span></div>
+                  <div class="inclusion-item"><i class="fa-solid fa-water"></i><span>Waterfalls</span></div>
+                </div>
+                <div class="pkg-footer">
+                  <div class="pkg-price-wrap">
+                    <span class="price-prefix">Starting From</span>
+                    <span class="price-val">₹ 9,999</span>
+                  </div>
+                  <div class="pkg-actions">
+                    <a href="packages/3days-2nights-athirapilly-munnar-tour.html" class="btn btn-outline" style="padding: 8px 14px;">Details</a>
+                    <button class="btn btn-primary" style="padding: 8px 14px;" onclick="openQuoteModal('3 Days 2 Nights Athirapilly Munnar')">Quote</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4: 4D/3N Alleppey Munnar -->
+            <div class="pkg-card" data-days="4" data-destinations="Alleppey Munnar Houseboat" data-price="13499">
+              <div class="pkg-thumb">
+                <img src="https://images.unsplash.com/photo-1506461883276-594a12b11cf3?auto=format&fit=crop&w=700&q=80" alt="Kerala Backwater Coconut Palms">
+                <span class="pkg-badge">Top Honeymoon Choice</span>
+                <span class="pkg-duration-pill"><i class="fa-regular fa-clock"></i> 4 Days / 3 Nights</span>
+              </div>
+              <div class="pkg-body">
+                <h3 class="pkg-title"><a href="packages/4days-3nights-alleppey-munnar-tour.html">4 Days 3 Nights Alleppey Houseboat & Munnar</a></h3>
+                <div class="pkg-destinations">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span>2N Munnar &bull; 1N Private Houseboat Alleppey</span>
+                </div>
+                <div class="pkg-inclusions">
+                  <div class="inclusion-item"><i class="fa-solid fa-ship"></i><span>Houseboat</span></div>
+                  <div class="inclusion-item"><i class="fa-solid fa-utensils"></i><span>Meals</span></div>
+                  <div class="inclusion-item"><i class="fa-solid fa-car"></i><span>AC Cab</span></div>
+                  <div class="inclusion-item"><i class="fa-solid fa-gem"></i><span>Candlelight</span></div>
+                </div>
+                <div class="pkg-footer">
+                  <div class="pkg-price-wrap">
+                    <span class="price-prefix">Starting From</span>
+                    <span class="price-val">₹ 13,499</span>
+                  </div>
+                  <div class="pkg-actions">
+                    <a href="packages/4days-3nights-alleppey-munnar-tour.html" class="btn btn-outline" style="padding: 8px 14px;">Details</a>
+                    <button class="btn btn-primary" style="padding: 8px 14px;" onclick="openQuoteModal('4 Days 3 Nights Alleppey Munnar')">Quote</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5: 4D/3N Munnar Alleppey Resort -->
+            <div class="pkg-card" data-days="4" data-destinations="Munnar Alleppey" data-price="12999">
+              <div class="pkg-thumb">
+                <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=700&q=80" alt="Munnar Hills Mist">
+                <span class="pkg-badge">Lake & Hills</span>
+                <span class="pkg-duration-pill"><i class="fa-regular fa-clock"></i> 4 Days / 3 Nights</span>
+              </div>
+              <div class="pkg-body">
+                <h3 class="pkg-title"><a href="packages/4days-3nights-munnar-alleppey-resort.html">4 Days 3 Nights Munnar & Alleppey Lake Resort</a></h3>
+                <div class="pkg-destinations">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span>2N Munnar Tea Valley &bull; 1N Backwater Lake Resort</span>
+                </div>
+                <div class="pkg-inclusions">
+                  <div class="inclusion-item"><i class="fa-solid fa-hotel"></i><span>Resort Stay</span></div>
+                  <div class="inclusion-item"><i class="fa-solid fa-utensils"></i><span>Breakfast</span></div>
+                  <div class="inclusion-item"><i class="fa-solid fa-car"></i><span>Chauffeur</span></div>
+                  <div class="inclusion-item"><i class="fa-solid fa-spa"></i><span>Ayurveda</span></div>
+                </div>
+                <div class="pkg-footer">
+                  <div class="pkg-price-wrap">
+                    <span class="price-prefix">Starting From</span>
+                    <span class="price-val">₹ 12,999</span>
+                  </div>
+                  <div class="pkg-actions">
+                    <a href="packages/4days-3nights-munnar-alleppey-resort.html" class="btn btn-outline" style="padding: 8px 14px;">Details</a>
+                    <button class="btn btn-primary" style="padding: 8px 14px;" onclick="openQuoteModal('4 Days 3 Nights Munnar Alleppey Resort')">Quote</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 6: 4D/3N Athirapilly Munnar -->
+            <div class="pkg-card" data-days="4" data-destinations="Athirapilly Munnar" data-price="12499">
+              <div class="pkg-thumb">
+                <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=700&q=80" alt="Kerala Scenic River">
+                <span class="pkg-badge">Waterfall Special</span>
+                <span class="pkg-duration-pill"><i class="fa-regular fa-clock"></i> 4 Days / 3 Nights</span>
+              </div>
+              <div class="pkg-body">
+                <h3 class="pkg-title"><a href="packages/4days-3nights-athirapilly-munnar-tour.html">4 Days 3 Nights Athirapilly & Munnar Special</a></h3>
+                <div class="pkg-destinations">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span>1N Athirapilly &bull; 2N Munnar Tea Valleys</span>
+                </div>
+                <div class="pkg-inclusions">
+                  <div class="inclusion-item"><i class="fa-solid fa-hotel"></i><span>Hotel</span></div>
+                  <div class="inclusion-item"><i class="fa-solid fa-utensils"></i><span>Breakfast</span></div>
+                  <div class="inclusion-item"><i class="fa-solid fa-car"></i><span>AC Cab</span></div>
+                  <div class="inclusion-item"><i class="fa-solid fa-camera"></i><span>Sightseeing</span></div>
+                </div>
+                <div class="pkg-footer">
+                  <div class="pkg-price-wrap">
+                    <span class="price-prefix">Starting From</span>
+                    <span class="price-val">₹ 12,499</span>
+                  </div>
+                  <div class="pkg-actions">
+                    <a href="packages/4days-3nights-athirapilly-munnar-tour.html" class="btn btn-outline" style="padding: 8px 14px;">Details</a>
+                    <button class="btn btn-primary" style="padding: 8px 14px;" onclick="openQuoteModal('4 Days 3 Nights Athirapilly Munnar')">Quote</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 7: 5D/4N Alleppey Munnar Cochin -->
+            <div class="pkg-card" data-days="5" data-destinations="Munnar Alleppey Cochin Houseboat" data-price="16999">
+              <div class="pkg-thumb">
+                <img src="https://images.unsplash.com/photo-1596178065887-1198b6148b2b?auto=format&fit=crop&w=700&q=80" alt="Kerala Houseboat Deck">
+                <span class="pkg-badge">Popular Family Pick</span>
+                <span class="pkg-duration-pill"><i class="fa-regular fa-clock"></i> 5 Days / 4 Nights</span>
+              </div>
+              <div class="pkg-body">
+                <h3 class="pkg-title"><a href="packages/5days-4nights-alleppey-munnar-cochin.html">5 Days 4 Nights Alleppey, Munnar & Cochin</a></h3>
+                <div class="pkg-destinations">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span>2N Munnar &bull; 1N Alleppey Houseboat &bull; 1N Cochin</span>
+                </div>
+                <div class="pkg-inclusions">
+                  <div class="inclusion-item"><i class="fa-solid fa-ship"></i><span>Houseboat</span></div>
+                  <div class="inclusion-item"><i class="fa-solid fa-utensils"></i><span>Meals</span></div>
+                  <div class="inclusion-item"><i class="fa-solid fa-car"></i><span>AC Cab</span></div>
+                  <div class="inclusion-item"><i class="fa-solid fa-landmark"></i><span>Fort Kochi</span></div>
+                </div>
+                <div class="pkg-footer">
+                  <div class="pkg-price-wrap">
+                    <span class="price-prefix">Starting From</span>
+                    <span class="price-val">₹ 16,999</span>
+                  </div>
+                  <div class="pkg-actions">
+                    <a href="packages/5days-4nights-alleppey-munnar-cochin.html" class="btn btn-outline" style="padding: 8px 14px;">Details</a>
+                    <button class="btn btn-primary" style="padding: 8px 14px;" onclick="openQuoteModal('5 Days 4 Nights Alleppey Munnar Cochin')">Quote</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 8: 5D/4N Munnar Thekkady Alleppey -->
+            <div class="pkg-card" data-days="5" data-destinations="Munnar Thekkady Alleppey Houseboat" data-price="17999">
+              <div class="pkg-thumb">
+                <img src="https://images.unsplash.com/photo-1616489953149-80572e093551?auto=format&fit=crop&w=700&q=80" alt="Thekkady Wildlife Lake">
+                <span class="pkg-badge">Golden Triangle</span>
+                <span class="pkg-duration-pill"><i class="fa-regular fa-clock"></i> 5 Days / 4 Nights</span>
+              </div>
+              <div class="pkg-body">
+                <h3 class="pkg-title"><a href="packages/5days-4nights-munnar-thekkady-alleppey.html">5 Days 4 Nights Munnar, Thekkady & Alleppey</a></h3>
+                <div class="pkg-destinations">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span>2N Munnar &bull; 1N Thekkady Wildlife &bull; 1N Houseboat</span>
+                </div>
+                <div class="pkg-inclusions">
+                  <div class="inclusion-item"><i class="fa-solid fa-ship"></i><span>Houseboat</span></div>
+                  <div class="inclusion-item"><i class="fa-solid fa-paw"></i><span>Periyar Safari</span></div>
+                  <div class="inclusion-item"><i class="fa-solid fa-car"></i><span>Private Cab</span></div>
+                  <div class="inclusion-item"><i class="fa-solid fa-seedling"></i><span>Spice Farm</span></div>
+                </div>
+                <div class="pkg-footer">
+                  <div class="pkg-price-wrap">
+                    <span class="price-prefix">Starting From</span>
+                    <span class="price-val">₹ 17,999</span>
+                  </div>
+                  <div class="pkg-actions">
+                    <a href="packages/5days-4nights-munnar-thekkady-alleppey.html" class="btn btn-outline" style="padding: 8px 14px;">Details</a>
+                    <button class="btn btn-primary" style="padding: 8px 14px;" onclick="openQuoteModal('5 Days 4 Nights Munnar Thekkady Alleppey')">Quote</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 9: 6D/5N Athirapilly Munnar Thekkady Alleppey -->
+            <div class="pkg-card" data-days="6" data-destinations="Athirapilly Munnar Thekkady Alleppey Houseboat" data-price="21499">
+              <div class="pkg-thumb">
+                <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=700&q=80" alt="Kerala Scenic River Falls">
+                <span class="pkg-badge">Complete Kerala</span>
+                <span class="pkg-duration-pill"><i class="fa-regular fa-clock"></i> 6 Days / 5 Nights</span>
+              </div>
+              <div class="pkg-body">
+                <h3 class="pkg-title"><a href="packages/6days-5nights-athirapilly-munnar-thekkady-alleppey.html">6 Days 5 Nights Athirapilly, Munnar, Thekkady & Alleppey</a></h3>
+                <div class="pkg-destinations">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span>Athirapilly Falls &bull; Munnar &bull; Thekkady &bull; Houseboat</span>
+                </div>
+                <div class="pkg-inclusions">
+                  <div class="inclusion-item"><i class="fa-solid fa-ship"></i><span>Houseboat</span></div>
+                  <div class="inclusion-item"><i class="fa-solid fa-utensils"></i><span>Meals</span></div>
+                  <div class="inclusion-item"><i class="fa-solid fa-car"></i><span>Chauffeur</span></div>
+                  <div class="inclusion-item"><i class="fa-solid fa-compass"></i><span>All Transfers</span></div>
+                </div>
+                <div class="pkg-footer">
+                  <div class="pkg-price-wrap">
+                    <span class="price-prefix">Starting From</span>
+                    <span class="price-val">₹ 21,499</span>
+                  </div>
+                  <div class="pkg-actions">
+                    <a href="packages/6days-5nights-athirapilly-munnar-thekkady-alleppey.html" class="btn btn-outline" style="padding: 8px 14px;">Details</a>
+                    <button class="btn btn-primary" style="padding: 8px 14px;" onclick="openQuoteModal('6 Days 5 Nights Athirapilly Munnar Thekkady Alleppey')">Quote</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 10: 7D/6N Munnar Thekkady Alleppey Kovalam -->
+            <div class="pkg-card" data-days="7" data-destinations="Munnar Thekkady Alleppey Kovalam Kanyakumari Houseboat" data-price="25999">
+              <div class="pkg-thumb">
+                <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=700&q=80" alt="Kovalam Lighthouse Beach">
+                <span class="pkg-badge">Hills, Backwaters & Beach</span>
+                <span class="pkg-duration-pill"><i class="fa-regular fa-clock"></i> 7 Days / 6 Nights</span>
+              </div>
+              <div class="pkg-body">
+                <h3 class="pkg-title"><a href="packages/7days-6nights-munnar-thekkady-alleppey-kovalam.html">7 Days 6 Nights Munnar, Thekkady, Alleppey & Kovalam</a></h3>
+                <div class="pkg-destinations">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span>2N Munnar &bull; 1N Thekkady &bull; 1N Houseboat &bull; 2N Kovalam</span>
+                </div>
+                <div class="pkg-inclusions">
+                  <div class="inclusion-item"><i class="fa-solid fa-umbrella-beach"></i><span>Beaches</span></div>
+                  <div class="inclusion-item"><i class="fa-solid fa-ship"></i><span>Houseboat</span></div>
+                  <div class="inclusion-item"><i class="fa-solid fa-car"></i><span>AC Cab</span></div>
+                  <div class="inclusion-item"><i class="fa-solid fa-landmark"></i><span>Kanyakumari</span></div>
+                </div>
+                <div class="pkg-footer">
+                  <div class="pkg-price-wrap">
+                    <span class="price-prefix">Starting From</span>
+                    <span class="price-val">₹ 25,999</span>
+                  </div>
+                  <div class="pkg-actions">
+                    <a href="packages/7days-6nights-munnar-thekkady-alleppey-kovalam.html" class="btn btn-outline" style="padding: 8px 14px;">Details</a>
+                    <button class="btn btn-primary" style="padding: 8px 14px;" onclick="openQuoteModal('7 Days 6 Nights Munnar Thekkady Alleppey Kovalam')">Quote</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 11: 8D/7N Munnar Vagamon Kovalam -->
+            <div class="pkg-card" data-days="8" data-destinations="Munnar Vagamon Alleppey Kovalam Houseboat" data-price="29999">
+              <div class="pkg-thumb">
+                <img src="https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&w=700&q=80" alt="Vagamon Pine Forest">
+                <span class="pkg-badge">Offbeat & Luxury</span>
+                <span class="pkg-duration-pill"><i class="fa-regular fa-clock"></i> 8 Days / 7 Nights</span>
+              </div>
+              <div class="pkg-body">
+                <h3 class="pkg-title"><a href="packages/8days-7nights-munnar-vagamon-tour.html">8 Days 7 Nights Munnar, Vagamon, Alleppey & Kovalam</a></h3>
+                <div class="pkg-destinations">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span>Munnar &bull; Vagamon Meadows &bull; Houseboat &bull; Kovalam</span>
+                </div>
+                <div class="pkg-inclusions">
+                  <div class="inclusion-item"><i class="fa-solid fa-tree"></i><span>Pine Forest</span></div>
+                  <div class="inclusion-item"><i class="fa-solid fa-ship"></i><span>Houseboat</span></div>
+                  <div class="inclusion-item"><i class="fa-solid fa-car"></i><span>Private Cab</span></div>
+                  <div class="inclusion-item"><i class="fa-solid fa-hotel"></i><span>Luxury Stay</span></div>
+                </div>
+                <div class="pkg-footer">
+                  <div class="pkg-price-wrap">
+                    <span class="price-prefix">Starting From</span>
+                    <span class="price-val">₹ 29,999</span>
+                  </div>
+                  <div class="pkg-actions">
+                    <a href="packages/8days-7nights-munnar-vagamon-tour.html" class="btn btn-outline" style="padding: 8px 14px;">Details</a>
+                    <button class="btn btn-primary" style="padding: 8px 14px;" onclick="openQuoteModal('8 Days 7 Nights Munnar Vagamon Tour')">Quote</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 12: 9D/8N Grand Kerala Explorer -->
+            <div class="pkg-card" data-days="9" data-destinations="Athirapilly Munnar Thekkady Alleppey Kovalam Kanyakumari Houseboat" data-price="34999">
+              <div class="pkg-thumb">
+                <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=700&q=80" alt="Kerala Traditional Boat Race">
+                <span class="pkg-badge">Ultimate Odyssey</span>
+                <span class="pkg-duration-pill"><i class="fa-regular fa-clock"></i> 9 Days / 8 Nights</span>
+              </div>
+              <div class="pkg-body">
+                <h3 class="pkg-title"><a href="packages/9days-8nights-grand-kerala-tour.html">9 Days 8 Nights Grand Kerala & Kanyakumari</a></h3>
+                <div class="pkg-destinations">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span>Athirapilly &bull; Munnar &bull; Thekkady &bull; Houseboat &bull; Kovalam &bull; Kanyakumari</span>
+                </div>
+                <div class="pkg-inclusions">
+                  <div class="inclusion-item"><i class="fa-solid fa-earth-asia"></i><span>Full Kerala</span></div>
+                  <div class="inclusion-item"><i class="fa-solid fa-ship"></i><span>Houseboat</span></div>
+                  <div class="inclusion-item"><i class="fa-solid fa-car"></i><span>Dedicated Cab</span></div>
+                  <div class="inclusion-item"><i class="fa-solid fa-utensils"></i><span>Breakfast</span></div>
+                </div>
+                <div class="pkg-footer">
+                  <div class="pkg-price-wrap">
+                    <span class="price-prefix">Starting From</span>
+                    <span class="price-val">₹ 34,999</span>
+                  </div>
+                  <div class="pkg-actions">
+                    <a href="packages/9days-8nights-grand-kerala-tour.html" class="btn btn-outline" style="padding: 8px 14px;">Details</a>
+                    <button class="btn btn-primary" style="padding: 8px 14px;" onclick="openQuoteModal('9 Days 8 Nights Grand Kerala')">Quote</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Usha Tour and Travels -->
+  <section class="section" id="why-us" style="background: var(--white); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Distinction</span>
+        <h2 class="section-title">Why Travel With Usha Tour and Travels?</h2>
+        <p class="section-desc">Born and rooted in Kerala, we build relationships, not just itineraries.</p>
+      </div>
+
+      <div class="trust-grid" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
+        <div style="background: var(--light-bg); padding: 30px; border-radius: var(--radius-lg); border: 1px solid var(--border);">
+          <div class="trust-icon" style="background: var(--primary); color: #fff; margin-bottom: 16px;"><i class="fa-solid fa-shield-halved"></i></div>
+          <h4 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 8px;">100% Transparent Pricing</h4>
+          <p style="font-size: 0.9rem; color: var(--muted);">No hidden vehicle tolls, parking charges, driver allowances or surprise surcharges. What you see is what you pay.</p>
+        </div>
+
+        <div style="background: var(--light-bg); padding: 30px; border-radius: var(--radius-lg); border: 1px solid var(--border);">
+          <div class="trust-icon" style="background: var(--gold); color: #fff; margin-bottom: 16px;"><i class="fa-solid fa-certificate"></i></div>
+          <h4 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 8px;">Govt Verified Fleet & Houseboats</h4>
+          <p style="font-size: 0.9rem; color: var(--muted);">Safety-certified green-category private houseboats with private chef and trained licensed drivers with clean safety records.</p>
+        </div>
+
+        <div style="background: var(--light-bg); padding: 30px; border-radius: var(--radius-lg); border: 1px solid var(--border);">
+          <div class="trust-icon" style="background: var(--sky); color: #fff; margin-bottom: 16px;"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+          <h4 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 8px;">Fully Customized Plans</h4>
+          <p style="font-size: 0.9rem; color: var(--muted);">Traveling with elders, infants, or celebrating a honeymoon? We customize sightseeing paces, room categories, and dietary choices.</p>
+        </div>
+
+        <div style="background: var(--light-bg); padding: 30px; border-radius: var(--radius-lg); border: 1px solid var(--border);">
+          <div class="trust-icon" style="background: var(--primary-dark); color: #fff; margin-bottom: 16px;"><i class="fa-solid fa-heart-circle-check"></i></div>
+          <h4 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 8px;">15,000+ Delighted Guests</h4>
+          <p style="font-size: 0.9rem; color: var(--muted);">Over 12 years of serving families, corporate travelers, and honeymoon couples across India and abroad with 4.9/5 star ratings.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Reviews -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Testimonials</span>
+        <h2 class="section-title">What Our Travelers Say</h2>
+        <p class="section-desc">Real stories from guests who experienced Kerala with Usha Tour and Travels.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Our 5 days Kerala trip with Usha Tour and Travels was seamless. The Munnar hotel had a breathtaking tea estate view, and the Alleppey houseboat chef made authentic Karimeen fish fry. Driver Rajesh was very polite and knowledgeable!"</p>
+          <div class="testi-author">
+            <div class="author-avatar">AK</div>
+            <div class="author-meta">
+              <h5>Anand & Kavitha Sharma</h5>
+              <span>Delhi &bull; Traveled in Sep 2026</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"We booked our honeymoon with Usha Tour and Travels for 6 days. They arranged candle-light dinner, flower bed decoration, and a private backwater cruise in Alleppey. Everything was punctual and comfortable."</p>
+          <div class="testi-author">
+            <div class="author-avatar">RD</div>
+            <div class="author-meta">
+              <h5>Rohan & Disha Deshmukh</h5>
+              <span>Mumbai &bull; Traveled in Aug 2026</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"We were traveling with my senior citizen parents. Usha Travels arranged ground floor rooms, wheelchair friendly routes, and kept travel time relaxed. Truly exceptional hospitality and care!"</p>
+          <div class="testi-author">
+            <div class="author-avatar">SP</div>
+            <div class="author-meta">
+              <h5>Siddharth Patel</h5>
+              <span>Ahmedabad &bull; Traveled in Oct 2026</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section" style="background: var(--white); border-top: 1px solid var(--border);">
+    <div class="container" style="max-width: 860px;">
+      <div class="section-header">
+        <span class="section-tag">Got Questions?</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-desc">Everything you need to know about booking your Kerala holiday.</p>
+      </div>
+
+      <div class="faq-wrap">
+        <div class="faq-item active">
+          <button class="faq-question">
+            <span>What happens when we arrive at Cochin Airport or Railway Station?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            Our private chauffeur will meet and welcome you right at the arrival terminal with a placard bearing your name. We take care of luggage handling, offer fresh welcome towels, and begin your journey seamlessly to Munnar or your first destination.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Are houseboats private or shared? What meals are included?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            All our houseboat bookings are 100% private. You get your own private bedroom, living balcony, and dedicated crew comprising driver, navigator, and personal chef. Houseboat stays include welcome drink, authentic Kerala lunch, evening tea & snacks, dinner, and next day breakfast.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can itineraries be personalized for families or couples?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            Yes! All packages at Usha Tour and Travels are 100% customizable. You can add extra days in Munnar, change hotels to 5-star treehouses, include wildlife jeep safaris, or add spa therapies as you prefer.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What is the payment and cancellation policy?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            You can confirm your booking with a small token advance (25%). The remaining balance is payable upon arrival in Kerala. We offer flexible rescheduling options in case of unexpected emergency circumstances.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>USHA <span>TOUR & TRAVELS</span></h4>
+          <p>Usha Tour and Travels is your premier destination management partner in Kerala. We specialize in bespoke leisure holidays, family vacations, honeymoon packages, and Ayurveda retreats with local authenticity and personalized service.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-circle"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-circle"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-circle"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-circle"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="social-circle"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Top Destinations</h5>
+          <ul class="footer-links">
+            <li><a href="packages/3days-2nights-cochin-munnar-tour.html">Munnar Hill Station</a></li>
+            <li><a href="packages/3days-2nights-munnar-alleppey-tour.html">Alleppey Houseboats</a></li>
+            <li><a href="packages/5days-4nights-munnar-thekkady-alleppey.html">Thekkady Wildlife</a></li>
+            <li><a href="packages/7days-6nights-munnar-thekkady-alleppey-kovalam.html">Kovalam Beach</a></li>
+            <li><a href="packages/3days-2nights-athirapilly-munnar-tour.html">Athirapilly Waterfalls</a></li>
+            <li><a href="packages/8days-7nights-munnar-vagamon-tour.html">Vagamon Pine Valleys</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">All Tour Packages</a></li>
+            <li><a href="#why-us">About Usha Travels</a></li>
+            <li><a href="#testimonials">Customer Reviews</a></li>
+            <li><a href="#faq">Travel FAQs</a></li>
+            <li><a href="#contact">Contact Support</a></li>
+            <li><a href="javascript:void(0)" onclick="openQuoteModal('Custom Plan')">Request Callback</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Kerala Head Office</h5>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Usha Complex, MG Road, Ernakulam, Cochin - 682016, Kerala, India</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <span>+91 98470 12345 / +91 98470 54321</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <span>contact@ushatravels.com</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-clock"></i>
+              <span>Mon - Sun: 8:00 AM - 10:00 PM IST</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Usha Tour and Travels. All Rights Reserved.</div>
+        <div>Crafted with pride &bull; Dedicated to God's Own Country</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Quick Actions -->
+  <div class="floating-actions">
+    <a href="https://wa.me/919847012345?text=Hello%20Usha%20Tour%20and%20Travels,%20I%20am%20interested%20in%20a%20Kerala%20tour%20package." target="_blank" class="fab fab-whatsapp" aria-label="Chat on WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="tel:+919847012345" class="fab fab-phone" aria-label="Call Usha Tour and Travels">
+      <i class="fa-solid fa-phone"></i>
+    </a>
+  </div>
+
+  <!-- Quote / Enquiry Modal -->
+  <div class="modal-overlay" id="quoteModal">
+    <div class="modal-card">
+      <button class="modal-close">&times;</button>
+      <div style="margin-bottom: 20px;">
+        <span class="hero-tag" style="margin-bottom: 8px;">Usha Tour & Travels</span>
+        <h3 style="font-size: 1.4rem; font-weight: 800; color: var(--dark-slate);">Get Instant Free Quote</h3>
+        <p style="font-size: 0.85rem; color: var(--muted);">Our Kerala specialist will send you a tailored itinerary with discounted pricing.</p>
+      </div>
+
+      <form class="enquiry-form" id="modalEnquiryForm">
+        <div class="form-field">
+          <label>Selected Tour Package</label>
+          <input type="text" class="form-input" id="modalPackageName" value="Kerala Customized Tour" readonly style="background: #f1f5f9; font-weight: 600;">
+        </div>
+
+        <div class="form-field">
+          <label>Your Full Name *</label>
+          <input type="text" class="form-input" placeholder="e.g. Ramesh Kumar" required>
+        </div>
+
+        <div class="form-field">
+          <label>Mobile Number / WhatsApp *</label>
+          <input type="tel" class="form-input" placeholder="e.g. +91 98765 43210" required>
+        </div>
+
+        <div class="form-field">
+          <label>Tentative Travel Date</label>
+          <input type="date" class="form-input">
+        </div>
+
+        <div class="form-field">
+          <label>Number of Travelers</label>
+          <select class="form-input">
+            <option>2 Adults (Couple / Friends)</option>
+            <option>Family (2 Adults + 1-2 Kids)</option>
+            <option>Small Group (4-8 Travelers)</option>
+            <option>Solo Traveler</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-gold" style="width: 100%; margin-top: 10px; padding: 12px;">
+          <i class="fa-solid fa-paper-plane"></i> Submit Enquiry
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
